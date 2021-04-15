@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text-center{
+    text-align: center;
+}
+.bars{
+    display: none;
+}
+.close{
+    padding: 20px ;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+.align-items-center{
+    align-items: center;
+}
+.btn{
+    padding: 0.75rem 1.25rem;
+    margin-right: 10px;
+    border-radius: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.Home-section{
+    background:linear-gradient(-60deg,#ff4457  0%,  #ff957d 100%);
+    position: relative;
+    min-height: 70vh;
+    position: relative;
+    border-radius: 0px 0px 0px 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Home-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg-pattern-intro.svg);
+    background-position: center;
+    background-position: -55vh;
+    background-size: 230vw;
+}
+.Home-section .Home-inner {
+    text-align: center;
+}
+.Home-section .Home-inner h2{
+    color: #fff;
+    font-family: 'Overpass', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 15px;
+}
+.Home-section .Home-inner p{
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: right;
+}
+.Home-section .Home-inner .btn-group {
+    padding-top: 30px;
+    text-align: right;
+    padding-right: 25px;
+}
+.Home-section .Home-inner .btn-group a{
+    padding: 0.75rem 1.25rem;
+    margin-right: 10px;
+    border-radius: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn-primary{
+    background: #fe7a85;
+    color: #fff;
+}
+.btn-secondary{
+    background: #fff;
+    color: #fe7a85;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+}
+.header .logo_area img{
+    width: 80px;
+}
+.header .navigation{
+    flex-grow: 1;
+    padding-left: 40px;
+}
+.header .navigation .menu .menu-list{
+    display: inline-block;
+    margin-left: 20px;
+}
+.header .navigation .menu .menu-list a{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+.header  .btn-header a{
+    margin-left: 5px;
+    color: #fff;
+}
+.About-section{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.About-section .About-title{
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+}
+.About-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.About-section .About-img{
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+.About-section  .About-img img{
+    width: 100%;
+}
+.About-section  .About-content{
+    flex: 0 0 42%;
+    max-width: 42%;
+    padding-top: 120px;
+}
+.About-section  .About-img .About-title{
+    text-align: left;
+    font-size: 30px;
+    color: #243d53;
+    margin-bottom: 10px;
+}
+.About-section  .About-content .About-item{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.About-section  .About-content .About-item h4{
+    font-family: 'Overpass', sans-serif;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.About-section  .About-content .About-item p{
+    font-family:'Ubuntu', sans-serif;
+    line-height: 25px;
+}
+.state-section{
+    background: #393a58;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    position: relative;
+    height: 50vh;
+}
+.state-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: -70% 70%;
+    background-size: 80%;
+}
+.state-section  .container{
+    max-width: 100%;
+}
+
+.state-section .state-content{
+    text-align: center;
+    color: #fff;
+    padding-top: 25vh;
+}
+.state-section .state-content h2{
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 20px;
+}
+.state-section .state-content p{
+    font-family:'Ubuntu', sans-serif;
+    line-height: 25px;
+}
+.Free-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+.Free-section .Free-img{
+    height: 100%;
+    width: 50%;
+    background: url(../images/illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 130%;
+    display: flex;
+    align-items: center;
+}
+.Free-content{
+    width: 50%;
+}
+.Free-section .Free-img img{
+    width: 100%;
+}
+.Free-section .Free-content .Free-item h4{
+    font-family: 'Overpass', sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.Free-section .Free-content .Free-item{
+    width: 80%;
+    margin: 0 auto 40px;
+}
+.Free-section .Free-content .Free-item p{
+    font-size: 16px;
+    line-height: 25px;
+    font-family:'Ubuntu', sans-serif;
+}
+.footer{
+    background: #24242c;
+    padding: 50px 0 70px;
+}
+.footer h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family:'Ubuntu', sans-serif;
+}
+.footer .footer-menu .footer-menu-list{
+    padding-bottom: 12px;
+    color: #fff;
+    font-family:'Ubuntu', sans-serif;
+}
+.footer .footer-menu .footer-menu-list a{
+    color: #c8c8cb;
+    font-size: 14px;
+}
+@media screen and (max-width:958px){
+    .About-img{
+        flex:  0 0 100% !important;
+        max-width: 100% !important;
+        text-align: center;
+    }
+    .About-img .About-title{
+        text-align: center !important;
+    }
+    .About-content{
+        flex: 0 0 100% !important;
+        max-width: 100% !important; 
+    }
+    .About-content .About-item h4{
+        text-align: center;
+    }
+    .About-img img{
+        width: 70% !important;
+    }
+}
+@media screen and (max-width:942px){
+    .header .navigation{
+        display: none;
+    }
+    .header .btn-header{
+        display: none;
+    }
+    .header .bars{
+        display: block;
+    }
+    .header .container{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:1086px){
+    .state-section{
+        min-height: 100vh;
+    }
+    .state-section .state-img img{
+        width: 95%;
+    }
+    .state-section .state-content{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .state-section .state-content{
+        padding-top: 0 !important;
+    }
+}
+@media screen and (max-width:598px){
+    .state-section .col-6{
+        flex:  0 0 100%;
+        max-width: 100%;
+    }
+    .state-section .col-6 .state-img img{
+        width: 70%
+    }
+    .state-section .state-img{
+        text-align: center;
+    }
+}
+@media screen and (max-width:790px){
+    .Free-section{
+        height:140vh;
+    }
+    .Free-section .Free-content{
+        width: 100% !important;
+        padding-top: 20px;
+    }
+    .Free-section .Free-img{
+        background: url(../images/illustration-laptop-mobile.svg);
+        width:  100% !important;
+        background-repeat: no-repeat;
+        height: 50%;
+        background-position: center;
+    }
+}
+@media screen and (max-width:767px){
+    .footer .logo{
+        margin-bottom: 20px;
+    }
+    .footer h4{
+        margin-bottom: 20px;
+    }
+    .footer .footer-menu .footer-menu-list{
+        padding-bottom: 20px;
+    }
+
+}
+.sidbar{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(-60deg,#ff4457  0%,  #ff957d 100%);
+    z-index: 2000;
+    transition: all 300ms ease-in-out;
+}
+.sidbar.show{
+    left: 0 !important;
+    transition: all 300ms ease-in-out;
+}
+.sidbar-list{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sidbar-list .sidbar-item{
+    padding-bottom: 20px;
+}
+.sidbar-list .sidbar-item a{
+    font-size: 20px;
+    color: #fff !important;
+    font-family: 'Ubuntu', sans-serif;
+}
